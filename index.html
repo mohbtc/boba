@@ -4,20 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#07090b">
-
 <title>Boba Fees — Solana Sniper Bot</title>
-
 <meta name="description" content="Boba Fees. Faster than you. Rugged like you.">
-
 <!-- BOBA FEES LOGO / FAVICON -->
-<link rel="icon" type="image/jpeg" href="./babo-image.jpeg">
-<link rel="apple-touch-icon" href="./babo-image.jpeg">
-
+<link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/mohbtc/boba/main/FF17BACF-518A-45AF-B113-176879116C8F.jpeg">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/mohbtc/boba/main/FF17BACF-518A-45AF-B113-176879116C8F.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
 :root {
   --bg: #07090b;
@@ -30,17 +24,14 @@
   --mono: 'DM Mono', monospace;
   --sans: 'Space Grotesk', sans-serif;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   background:
     radial-gradient(ellipse at 78% 7%, #24e6a116, transparent 30%),
@@ -50,19 +41,15 @@ body {
   font-family: var(--sans);
   overflow-x: hidden;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 .wrap {
   width: min(1120px, calc(100% - 40px));
   margin: auto;
 }
-
 /* NAVIGATION */
-
 .nav {
   min-height: 82px;
   display: flex;
@@ -71,7 +58,6 @@ a {
   gap: 20px;
   border-bottom: 1px solid #ffffff12;
 }
-
 .brand {
   display: flex;
   align-items: center;
@@ -80,9 +66,6 @@ a {
   font-weight: 700;
   letter-spacing: -0.04em;
 }
-
-/* ACTUAL BOBA FEES LOGO */
-
 .brand-logo {
   width: 43px;
   height: 43px;
@@ -91,7 +74,6 @@ a {
   border-radius: 10px;
   flex-shrink: 0;
 }
-
 .nav-right {
   display: flex;
   align-items: center;
@@ -99,7 +81,6 @@ a {
   color: var(--muted);
   font: 12px var(--mono);
 }
-
 .pill {
   padding: 11px 16px;
   border: 1px solid #31443b;
@@ -107,9 +88,7 @@ a {
   color: var(--green);
   background: #0a1511;
 }
-
 /* HERO */
-
 .hero {
   min-height: 660px;
   display: grid;
@@ -118,7 +97,6 @@ a {
   gap: 55px;
   padding: 75px 0 85px;
 }
-
 .hero-logo {
   width: 112px;
   height: 112px;
@@ -128,7 +106,6 @@ a {
   margin-bottom: 27px;
   box-shadow: 0 0 40px #24e6a111;
 }
-
 .eyebrow {
   font: 12px var(--mono);
   letter-spacing: 0.14em;
@@ -138,7 +115,6 @@ a {
   align-items: center;
   gap: 10px;
 }
-
 .dot {
   width: 7px;
   height: 7px;
@@ -147,32 +123,27 @@ a {
   box-shadow: 0 0 12px var(--green);
   animation: pulse 1.8s infinite;
 }
-
 h1 {
   font-size: clamp(50px, 7vw, 84px);
   line-height: 0.96;
   letter-spacing: -0.075em;
   margin: 25px 0 22px;
 }
-
 h1 span {
   color: var(--green);
 }
-
 .lead {
   font-size: 18px;
   line-height: 1.7;
   color: #aab6b0;
   max-width: 480px;
 }
-
 .actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 30px;
 }
-
 .btn {
   padding: 14px 20px;
   border-radius: 9px;
@@ -185,33 +156,26 @@ h1 span {
   transition: 0.25s ease;
   cursor: pointer;
 }
-
 .btn:hover {
   transform: translateY(-3px);
 }
-
 .btn.primary {
   background: var(--green);
   color: #06110c;
   border-color: var(--green);
 }
-
 .btn.secondary {
   background: #101513;
 }
-
 .micro {
   margin-top: 22px;
   color: #68746e;
   font: 11px var(--mono);
 }
-
 /* TERMINAL */
-
 .terminal-wrap {
   position: relative;
 }
-
 .glow {
   position: absolute;
   inset: 10% 0;
@@ -220,7 +184,6 @@ h1 span {
   opacity: 0.09;
   pointer-events: none;
 }
-
 .terminal {
   position: relative;
   background: linear-gradient(145deg, #111719, #080b0d);
@@ -231,7 +194,6 @@ h1 span {
   transform: rotate(1deg);
   animation: appear 0.9s ease both;
 }
-
 .term-top {
   height: 48px;
   border-bottom: 1px solid #202827;
@@ -242,43 +204,35 @@ h1 span {
   color: #82908a;
   font: 11px var(--mono);
 }
-
 .lights {
   display: flex;
   gap: 6px;
 }
-
 .lights i {
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background: #39413d;
 }
-
 .term-body {
   padding: 25px 23px 28px;
   font: 12px/2 var(--mono);
   color: #91a19a;
 }
-
 .prompt {
   color: var(--green);
 }
-
 .purple {
   color: var(--purple);
 }
-
 .dim {
   color: #56645e;
 }
-
 .term-line {
   display: flex;
   justify-content: space-between;
   gap: 12px;
 }
-
 .status {
   display: inline-block;
   color: var(--green);
@@ -288,7 +242,6 @@ h1 span {
   line-height: 1.8;
   font-size: 10px;
 }
-
 .mini-chart {
   height: 108px;
   margin: 18px 0 14px;
@@ -309,12 +262,10 @@ h1 span {
       #ffffff06 44px
     );
 }
-
 .mini-chart svg {
   width: 100%;
   height: 100%;
 }
-
 .term-foot {
   border-top: 1px solid #202827;
   padding: 14px 20px;
@@ -324,46 +275,37 @@ h1 span {
   font: 10px var(--mono);
   color: #718078;
 }
-
 /* SECTIONS */
-
 .section {
   padding: 75px 0;
   border-top: 1px solid #ffffff0d;
 }
-
 .section-head {
   max-width: 620px;
   margin-bottom: 30px;
 }
-
 .kicker {
   font: 11px var(--mono);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--purple);
 }
-
 h2 {
   font-size: clamp(30px, 4vw, 46px);
   line-height: 1.05;
   letter-spacing: -0.06em;
   margin: 14px 0;
 }
-
 .sub {
   color: var(--muted);
   line-height: 1.7;
 }
-
 /* FEATURE CARDS */
-
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
-
 .card {
   background: linear-gradient(145deg, #101515, #0a0d0e);
   border: 1px solid #222d29;
@@ -372,13 +314,11 @@ h2 {
   min-height: 190px;
   transition: 0.25s ease;
 }
-
 .card:hover {
   border-color: #24e6a155;
   transform: translateY(-5px);
   box-shadow: 0 15px 40px #0003;
 }
-
 .icon {
   width: 39px;
   height: 39px;
@@ -391,27 +331,22 @@ h2 {
   font: 16px var(--mono);
   margin-bottom: 26px;
 }
-
 .card h3 {
   margin-bottom: 10px;
   font-size: 18px;
 }
-
 .card p {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.65;
 }
-
 /* PROJECT MINDSET */
-
 .manifesto {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
   gap: 60px;
   align-items: start;
 }
-
 .quote {
   font-size: clamp(30px, 4.3vw, 52px);
   font-weight: 600;
@@ -419,25 +354,20 @@ h2 {
   letter-spacing: -0.06em;
   margin: 0;
 }
-
 .quote span {
   color: var(--green);
 }
-
 .manifesto-copy {
   color: #9ba7a1;
   line-height: 1.85;
   font-size: 15px;
   margin-top: 22px;
 }
-
 .manifesto-copy strong {
   color: var(--text);
   font-weight: 600;
 }
-
 /* CALL TO ACTION */
-
 .cta {
   border: 1px solid #294035;
   background:
@@ -450,19 +380,15 @@ h2 {
   align-items: center;
   gap: 25px;
 }
-
 .cta h2 {
   max-width: 540px;
   margin-top: 0;
 }
-
 .cta p {
   color: var(--muted);
   line-height: 1.7;
 }
-
 /* FOOTER */
-
 .footer {
   padding: 28px 0 38px;
   color: #65716b;
@@ -472,130 +398,103 @@ h2 {
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .footer b {
   color: #b9c5bf;
   font-weight: 500;
 }
-
 /* ANIMATIONS */
-
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
     box-shadow: 0 0 12px var(--green);
   }
-
   50% {
     opacity: 0.45;
     box-shadow: 0 0 3px var(--green);
   }
 }
-
 @keyframes appear {
   from {
     opacity: 0;
     transform: translateY(18px) rotate(1deg);
   }
-
   to {
     opacity: 1;
     transform: translateY(0) rotate(1deg);
   }
 }
-
 /* MOBILE */
-
 @media (max-width: 800px) {
   .hero {
     grid-template-columns: 1fr;
     gap: 45px;
     padding: 65px 0;
   }
-
   .hero-logo {
     width: 96px;
     height: 96px;
     margin-bottom: 24px;
   }
-
   .terminal {
     transform: none;
   }
-
   .cards {
     grid-template-columns: 1fr;
   }
-
   .card {
     min-height: 0;
   }
-
   .manifesto {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-
   .nav-right .nav-link {
     display: none;
   }
-
   .cta {
     align-items: flex-start;
     flex-direction: column;
   }
-
   .section {
     padding: 58px 0;
   }
-
   h1 {
     font-size: clamp(53px, 13vw, 78px);
   }
 }
-
 @media (max-width: 420px) {
   .wrap {
     width: calc(100% - 30px);
   }
-
   .nav {
     min-height: 72px;
   }
-
   .brand {
     font-size: 16px;
   }
-
   .brand-logo {
     width: 36px;
     height: 36px;
   }
-
   .pill {
     padding: 9px 11px;
     font-size: 10px;
   }
-
   .term-body {
     padding: 20px 14px;
     font-size: 10px;
   }
-
   .term-foot {
     font-size: 9px;
   }
-
   .lead {
     font-size: 16px;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
-
   *,
   *::before,
   *::after {
@@ -605,130 +504,98 @@ h2 {
 }
 </style>
 </head>
-
 <body>
-
 <header class="wrap nav">
   <a class="brand" href="#top" aria-label="Boba Fees home">
     <img
-      src="./babo-image.jpeg"
+      src="https://raw.githubusercontent.com/mohbtc/boba/main/FF17BACF-518A-45AF-B113-176879116C8F.jpeg"
       alt="Boba Fees Logo"
       class="brand-logo"
     >
     <span>BOBA FEES<span style="color:var(--green)">.</span></span>
   </a>
-
   <div class="nav-right">
     <a class="nav-link" href="#approach">THE APPROACH</a>
     <a class="nav-link" href="#about">THE MINDSET</a>
     <a class="pill" href="#access">GET IN THE TRENCHES ↗</a>
   </div>
 </header>
-
 <main id="top" class="wrap">
-
   <!-- HERO -->
-
   <section class="hero">
-
     <div class="hero-copy">
-
-      <!-- ACTUAL BOBA FEES LOGO -->
       <img
-        src="./babo-image.jpeg"
+        src="https://raw.githubusercontent.com/mohbtc/boba/main/FF17BACF-518A-45AF-B113-176879116C8F.jpeg"
         alt="Boba Fees Logo"
         class="hero-logo"
       >
-
       <div class="eyebrow">
         <span class="dot"></span>
         SOLANA SNIPER BOT · IN THE TRENCHES
       </div>
-
       <h1>
         Faster than you.<br>
         <span>Rugged like you.</span>
       </h1>
-
       <p class="lead">
         The Solana trenches move fast. Boba Fees is built for
         the people who move with them — sharp, stubborn,
         and always watching the next block.
       </p>
-
       <div class="actions">
         <a class="btn primary" href="#access">
           Explore Boba Fees <span>↗</span>
         </a>
-
         <a class="btn secondary" href="#approach">
           See the approach ↓
         </a>
       </div>
-
       <div class="micro">
         NO BIG TALK. JUST TRENCHES.
         <span style="color:var(--green)">●</span>
         BUILT TO KEEP MOVING.
       </div>
-
     </div>
-
     <!-- DECORATIVE TERMINAL -->
-
     <div class="terminal-wrap">
-
       <div class="glow"></div>
-
       <div class="terminal">
-
         <div class="term-top">
           <span>BOBA_FEES / TERMINAL</span>
-
           <span class="lights">
             <i></i><i></i><i></i>
           </span>
         </div>
-
         <div class="term-body">
-
           <div>
             <span class="prompt">boba@trenches</span>:~$ ./boba --status
           </div>
-
           <div class="term-line">
             <span>runtime</span>
             <span class="status">ONLINE</span>
           </div>
-
           <div class="term-line">
             <span>network</span>
             <span class="purple">SOLANA</span>
           </div>
-
           <div class="term-line">
             <span>mode</span>
             <span>SNIPER</span>
           </div>
-
           <div class="term-line">
             <span>attitude</span>
             <span class="prompt">UNRUGGABLE* MINDSET</span>
           </div>
-
           <div class="mini-chart">
-
             <svg viewBox="0 0 420 110"
                  preserveAspectRatio="none"
                  aria-label="Decorative market line">
-
               <defs>
                 <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0" stop-color="#24e6a1" stop-opacity=".24"/>
                   <stop offset="1" stop-color="#24e6a1" stop-opacity="0"/>
                 </linearGradient>
               </defs>
-
               <path
                 d="M0 88 L25 81 L43 90 L68 57 L85 66 L111 45
                 L130 58 L154 31 L175 42 L194 23 L213 39
@@ -737,7 +604,6 @@ h2 {
                 L420 110 L0 110Z"
                 fill="url(#area)"
               />
-
               <path
                 d="M0 88 L25 81 L43 90 L68 57 L85 66 L111 45
                 L130 58 L154 31 L175 42 L194 23 L213 39
@@ -747,52 +613,35 @@ h2 {
                 stroke="#24e6a1"
                 stroke-width="2"
               />
-
             </svg>
-
           </div>
-
           <div class="dim">
             // the market doesn't wait. neither do we.
           </div>
-
           <div>
             <span class="prompt">boba@trenches</span>:~$
             <span class="purple">_</span>
           </div>
-
         </div>
-
         <div class="term-foot">
           <span>BOBA FEES // SOLANA</span>
           <span>STILL HERE.</span>
         </div>
-
       </div>
     </div>
-
   </section>
-
   <!-- APPROACH -->
-
   <section id="approach" class="section">
-
     <div class="section-head">
-
       <div class="kicker">01 / THE APPROACH</div>
-
       <h2>Built for the pace of the trenches.</h2>
-
       <p class="sub">
         A clear, no-nonsense identity for a Solana sniper bot.
         The focus is speed, grit, and a little bit of internet-native
         character — not empty promises.
       </p>
-
     </div>
-
     <div class="cards">
-
       <article class="card">
         <div class="icon">↯</div>
         <h3>Speed-minded</h3>
@@ -801,7 +650,6 @@ h2 {
           can cost you the moment.
         </p>
       </article>
-
       <article class="card">
         <div class="icon">⌘</div>
         <h3>Trench-tested attitude</h3>
@@ -810,7 +658,6 @@ h2 {
           traders who know the game is unforgiving.
         </p>
       </article>
-
       <article class="card">
         <div class="icon">◉</div>
         <h3>Always on the watch</h3>
@@ -819,74 +666,50 @@ h2 {
           focused, technical, and ready for the next move.
         </p>
       </article>
-
     </div>
-
   </section>
-
   <!-- MINDSET -->
-
   <section id="about" class="section manifesto">
-
     <div>
       <div class="kicker">02 / THE MINDSET</div>
-
       <h2>
         Meet the bot.<br>
         Know the attitude.
       </h2>
     </div>
-
     <div>
-
       <p class="quote">
         “My human pays the server bill.”
         <br>
         <span>I'm just here to work.</span>
       </p>
-
       <p class="manifesto-copy">
         Boba Fees gives the Solana sniper-bot space a personality:
         a pixel-headed operator, a terminal glow, and dry humour
         that feels native to crypto.
-
         It should feel like a character from the trenches —
         not another generic trading dashboard.
-
         <br><br>
-
         <strong>
           Fast is the pitch. Rugged is the personality.
         </strong>
-
         Actual execution speed, supported chains, security practices,
         and trading features should be confirmed by the team before
         this page makes technical or performance claims.
       </p>
-
     </div>
-
   </section>
-
   <!-- CALL TO ACTION -->
-
   <section id="access" class="section">
-
     <div class="cta">
-
       <div>
-
         <div class="kicker">03 / FIND YOUR WAY IN</div>
-
         <h2>The trenches are calling.</h2>
-
         <p>
           Want to see what Boba Fees is building?
           Follow the project for updates and access announcements.
         </p>
-
       </div>
-
       <a
         class="btn primary"
         href="https://x.com/bobafees"
@@ -895,29 +718,20 @@ h2 {
       >
         Follow @bobafees ↗
       </a>
-
     </div>
-
   </section>
-
 </main>
-
 <footer class="wrap footer">
-
   <span>
     <b>BOBA FEES</b> · SOLANA SNIPER BOT
   </span>
-
   <span>
     Trade carefully. Sniping is high risk. No outcome is guaranteed.
   </span>
-
 </footer>
-
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".card");
-
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -929,27 +743,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }, {
       threshold: 0.12
     });
-
     cards.forEach((card) => {
       card.style.opacity = "0";
       card.style.transform = "translateY(14px)";
       card.style.transition = "opacity .5s ease, transform .5s ease";
       observer.observe(card);
     });
-
     const style = document.createElement("style");
-
     style.textContent = `
       .card.visible {
         opacity: 1 !important;
         transform: translateY(0) !important;
       }
     `;
-
     document.head.appendChild(style);
   }
 });
 </script>
-
 </body>
 </html>
